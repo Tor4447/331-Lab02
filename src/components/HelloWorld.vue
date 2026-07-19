@@ -2,6 +2,9 @@
 defineProps<{
   msg: string
 }>()
+// defineProps<{
+//   msg: string
+// }>()
 </script>
 
 <template>
@@ -13,6 +16,7 @@ defineProps<{
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
     </h3>
   </div>
+  <div class="greetings"></div>
 </template>
 
 <style scoped>
