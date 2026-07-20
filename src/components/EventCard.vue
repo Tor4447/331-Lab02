@@ -4,41 +4,42 @@ import { ref } from 'vue'
 //    msg: string
 // }>()
 const event = ref({
-    id: 5928101,
-    category: 'animal welfare',
-    title: 'Cat Adoption Day',
-    description: 'Find your new feline friend at this event.',
-    location: 'Meow Town',
-    date: 'January 28, 2026',
-    time: '12:00',
-    petsAllowed: true,
-    organizer: 'Kat Laydee'
+  id: 5928101,
+  category: 'animal welfare',
+  title: 'Cat Adoption Day',
+  description: 'Find your new feline friend at this event.',
+  location: 'Meow Town',
+  date: 'January 28, 2026',
+  time: '12:00',
+  petsAllowed: true,
+  organizer: 'Kat Laydee',
 })
 </script>
 
 <template>
-    <div class="event-class"></div>
-    <div class="event-class">
+  <div class="event-class">
     <div class="event-card">
-    <h2>{{ event.title }}</h2>
-    <span>{{ event.time }}</span>
+      <h2>{{ event.title }}</h2>
+      <span>{{ event.description }}</span>
+      <br />
+      <span>@{{ event.time }} on {{ event.date }}</span>
     </div>
-    </div>
+  </div>
 </template>
 
 <style scoped>
-event-class {
+.event-class {
   display: flex;
   justify-content: center;
 }
-event-card {
+.event-card {
   padding: 20px;
   width: 250px;
   cursor: pointer;
   border: 1px solid #39495c;
   margin-bottom: 18px;
 }
-event-card:hover {
+.event-card:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
 }
